@@ -4,7 +4,7 @@ var app = express();
 
 var PORT = process.env.Port || 8080;
 
-app.use(expresss.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 require("./app/routing/apiRoutes")(app);
